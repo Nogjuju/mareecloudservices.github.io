@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Solutions</title>
+    <title>Engraving Options</title>
     
     <!-- SEO & Social Sharing Meta Tags -->
-    <meta name="description" content="Explore WhatsApp business solutions to enhance communication for your webpage and on-site business.">
-    <meta property="og:title" content="WhatsApp Solutions - Maree Cloud Solutions">
-    <meta property="og:description" content="Add WhatsApp to your webpage or on-site business for seamless communication.">
+    <meta name="description" content="Discover unique engraving solutions, including custom designs, business signs, home/bar signs, phone holders, baby gifts, and map-based images.">
+    <meta property="og:title" content="Engraving Solutions - Maree Cloud Services">
+    <meta property="og:description" content="Personalized engraving services for businesses, homes, and gifts. Browse our gallery of previous work.">
     <meta property="og:image" content="https://mareecloudservices.co.za/company_logo.png">
-    <meta property="og:url" content="https://mareecloudservices.co.za/whatsapp.html">
+    <meta property="og:url" content="https://mareecloudservices.co.za/engraving.html">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
         body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; text-align: center; background: white; color: black; }
         header { background: white; display: flex; justify-content: space-between; align-items: center; padding: 20px; font-size: 24px; }
         .logo { width: 150px; background: white; }
-        .menu { display: flex; gap: 15px; justify-content: center; }
+        .menu { display: flex; gap: 15px; justify-content: center; background: #f4f4f4; padding: 15px; position: sticky; top: 0; width: 100%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); }
         .menu a { text-decoration: none; color: black; font-weight: bold; padding: 10px 15px; transition: color 0.3s ease-in-out; }
         .menu a:hover { color: green; }
         section { padding: 20px; }
         .back { margin-top: 20px; display: inline-block; padding: 10px 20px; background: green; color: white; text-decoration: none; border-radius: 5px; transition: background 0.3s ease-in-out; }
         .back:hover { background: darkgreen; }
+        .gallery img { width: 150px; height: 150px; object-fit: cover; margin: 10px; cursor: pointer; border-radius: 8px; transition: transform 0.3s ease-in-out; }
+        .gallery img:hover { transform: scale(1.1); }
+        .popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); align-items: center; justify-content: center; }
+        .popup img { max-width: 80%; max-height: 80%; border-radius: 10px; }
+        .popup:target { display: flex; }
     </style>
 </head>
 <body>
     <header>
-        <div>Maree Cloud Solutions</div>
-        <img src="company_logo.png" alt="Maree Cloud Solutions Logo" class="logo">
+        <div>Maree Cloud Services</div>
+        <img src="company_logo.png" alt="Maree Cloud Services Logo" class="logo">
     </header>
     
     <nav class="menu">
@@ -39,12 +44,50 @@
     </nav>
     
     <section>
-        <h2>Our WhatsApp Business Solutions</h2>
+        <h2>Our Engraving Services</h2>
         <ul>
-            <li>Add WhatsApp to my webpage</li>
-            <li>Add WhatsApp to my on-site business</li>
+            <li>Custom designs</li>
+            <li>Business signs</li>
+            <li>Home/bar signs</li>
+            <li>Phone holders</li>
+            <li>New baby gifts</li>
+            <li>Map-based images</li>
         </ul>
     </section>
+    
+    <section class="gallery">
+        <h2>Our Work</h2>
+        <a href="#img1"><img src="Golf_memory.jpg" alt="Engraving 1"></a>
+        <a href="#img2"><img src="QRcode.jpg" alt="Engraving 2"></a>
+        <a href="#img3"><img src="baby.jpg" alt="Engraving 3"></a>
+        <a href="#img4"><img src="streetaddress_pine.jpg" alt="Engraving 4"></a>
+        <a href="#img5"><img src="dublin_street_sign1.jpg" alt="Engraving 5"></a>
+        <a href="#img6"><img src="irish_street_sign1.jpg" alt="Engraving 6"></a>
+        <a href="#img7"><img src="irish_street_sign2.jpg" alt="Engraving 7"></a>
+    </section>
+    
+    <!-- Pop-up Images -->
+    <div id="img1" class="popup" onclick="window.location='#'">
+        <img src="Golf_memory.jpg" alt="Engraving 1">
+    </div>
+    <div id="img2" class="popup" onclick="window.location='#'">
+        <img src="QRcode.jpg" alt="Engraving 2">
+    </div>
+    <div id="img3" class="popup" onclick="window.location='#'">
+        <img src="baby.jpg" alt="Engraving 3">
+    </div>
+    <div id="img4" class="popup" onclick="window.location='#'">
+        <img src="streetaddress_pine.jpg" alt="Engraving 4">
+    </div>
+    <div id="img5" class="popup" onclick="window.location='#'">
+        <img src="dublin_street_sign1.jpg" alt="Engraving 5">
+    </div>
+    <div id="img6" class="popup" onclick="window.location='#'">
+        <img src="irish_street_sign1.jpg" alt="Engraving 6">
+    </div>
+    <div id="img7" class="popup" onclick="window.location='#'">
+        <img src="irish_street_sign2.jpg" alt="Engraving 7">
+    </div>
     
     <a href="index.html" class="back">Back to Home</a>
 </body>
