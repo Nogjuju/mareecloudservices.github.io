@@ -15,16 +15,63 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+        /* Custom font for logo (if available) */
+        @font-face {
+            font-family: 'CompanyFont';
+            src: url('https://mareecloudservices.co.za/font.ttf') format('truetype');
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body { height: 100%; display: flex; flex-direction: column; }
         body { font-family: 'Montserrat', sans-serif; text-align: center; background: #fff; color: #000; }
         
-        .header { display: flex; align-items: center; justify-content: space-between; padding: 15px; max-width: 1200px; margin: 0 auto; } 
-        .company-name { font-size: 28px; font-weight: bold; text-align: center; margin: 0; flex: 1; } 
-        .logo { width: 120px; max-width: 100%; } 
+        .header { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 15px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            position: relative; 
+        }
+
+        .company-name { 
+            font-size: 56px; /* Twice as big */
+            font-weight: bold; 
+            text-align: center; 
+            margin: 0 auto; 
+            font-family: 'CompanyFont', sans-serif; /* Custom font */
+        }
+
+        .logo { 
+            width: 120px; 
+            max-width: 100%; 
+            position: absolute; 
+            right: 20px; 
+            top: 15px;
+        } 
         
-        .menu { display: flex; justify-content: center; background: #f4f4f4; padding: 12px; position: sticky; top: 0; width: 100%; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 1000; } 
-        .menu a { text-decoration: none; color: #000; font-weight: bold; padding: 8px 16px; transition: .3s; } 
+        .menu { 
+            display: flex; 
+            justify-content: center; 
+            background: #f4f4f4; 
+            padding: 12px; 
+            position: sticky; 
+            top: 0; 
+            width: 100%; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            z-index: 1000; 
+        } 
+
+        .menu a { 
+            text-decoration: none; 
+            color: #000; 
+            font-weight: bold; 
+            padding: 8px 16px; 
+            transition: .3s; 
+        } 
+
         .menu a:hover { color: green; } 
         
         section { padding: 35px 20px; flex: 1; } 
@@ -83,8 +130,9 @@
         .whatsapp-button img { width: 30px; height: 30px; margin-right: 10px; } 
 
         @media (max-width: 768px) { 
-            .header { flex-direction: column; text-align: center; } 
-            .logo { margin-top: 10px; width: 100px; } 
+            .header { flex-direction: column; text-align: center; position: relative; } 
+            .company-name { font-size: 36px; } /* Adjust for mobile */
+            .logo { width: 100px; right: 10px; top: 10px; position: absolute; } 
             .menu { flex-direction: column; padding: 8px; } 
             .menu a { padding: 10px; } 
             .button-container { flex-direction: column; align-items: center; } 
@@ -122,24 +170,4 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p><strong>Maree Cloud Services</strong></p>
-        <p>71 Arend Avenue, Randpark, 2194, Gauteng, ZA</p>
-        <p>Enterprise No: 2023/238455/07</p>
-        <p>Enterprise Name: MAREE CLOUD SERVICES (Pty) Ltd</p>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ian@mareecloudservices.co.za" target="_blank">
-    ian@mareecloudservices.co.za
-</a>
-
-        <p>📞 Call Maree Cloud Services on +27 63 580 0506</p>
-        
-        <!-- WhatsApp Call Button -->
-        <a href="https://wa.me/27635800506" class="whatsapp-button" aria-label="Call Maree Cloud Services on WhatsApp">
-            <img src="https://mareecloudservices.co.za/whatsapp_logo.png" alt="WhatsApp Logo"> Call on WhatsApp
-        </a>
-
-        <p><a href="terms.html" aria-label="View Terms and Conditions">Terms & Conditions</a> | <a href="privacy.html" aria-label="View Privacy Policy">Privacy Policy</a></p>
-        <p>© 2025 Maree Cloud Services. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+        <p
