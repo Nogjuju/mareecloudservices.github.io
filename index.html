@@ -36,12 +36,17 @@
         <img src="irish_street_sign2.jpg" alt="Engraving 7">
     </section>
      
-    <section class="upload-section">
-        <h2>Build Your Own Custom Engraving</h2>
-        <p>Upload an image you’d like us to engrave:</p>
-        <input type="file" id="upload" accept="image/*">
-        <p><strong>Note:</strong> Supported formats: PNG, JPG</p>
-    </section>
+   <section class="upload-section">
+    <h2>Build Your Own Custom Engraving</h2>
+    <p>Upload an image you’d like us to engrave:</p>
+    <form action="https://formspree.io/f/xyzkdpoz" method="POST" enctype="multipart/form-data">
+        <input type="file" name="attachment" accept="image/*" required>
+        <input type="email" name="_replyto" placeholder="Your email (optional)">
+        <textarea name="message" placeholder="Additional details (optional)"></textarea>
+        <button type="submit">Send Design</button>
+    </form>
+    <p><strong>Note:</strong> Supported formats: PNG, JPG</p>
+</section>
 
     <section class="contact">
         <h2>Contact Us</h2>
