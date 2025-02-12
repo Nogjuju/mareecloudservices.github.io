@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Maree Cloud Services</title>
 
     <meta name="description" content="Maree Cloud Services provides WhatsApp business solutions and high-quality laser engraving services in South Africa.">
@@ -15,109 +15,20 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-        
-        body { 
-            font-family: 'Montserrat', sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            text-align: center; 
-            background: white; 
-            color: black; 
-        }
-
-        /* Header */
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px;
-            background: white;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .company-name {
-            font-size: 32px;
-            font-weight: bold;
-            flex: 1;
-            text-align: center;
-            margin: 0;
-        }
-
-        .logo {
-            width: 150px;
-        }
-
-        /* Navigation Menu */
-        .menu { 
-            display: flex; 
-            justify-content: center; 
-            background: #f4f4f4; 
-            padding: 15px; 
-            position: sticky; 
-            top: 0; 
-            width: 100%; 
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-            z-index: 1000; 
-        }
-
-        .menu a { 
-            text-decoration: none; 
-            color: black; 
-            font-weight: bold; 
-            padding: 10px 20px; 
-            transition: color 0.3s ease-in-out; 
-        }
-
-        .menu a:hover { 
-            color: green; 
-        }
-
-        /* Section Styling */
-        section { 
-            padding: 40px 20px; 
-        }
-
-        h2 {
-            margin-bottom: 30px;
-        }
-
-        /* Buttons */
-        .button-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .button { 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            width: 280px; 
-            height: 80px; 
-            background: green; 
-            color: white; 
-            font-size: 18px; 
-            font-weight: bold; 
-            border: none; 
-            border-radius: 8px; 
-            cursor: pointer; 
-            text-decoration: none; 
-            transition: background 0.3s ease-in-out; 
-            padding: 10px;
-        }
-
-        .button:hover { 
-            background: darkgreen; 
-        }
-
-        .button img { 
-            width: 40px; 
-            height: 40px; 
-            margin-right: 10px; 
-        }
-
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:'Montserrat',sans-serif;text-align:center;background:#fff;color:#000} 
+        .header{display:flex;align-items:center;justify-content:space-between;padding:15px;max-width:1200px;margin:0 auto} 
+        .company-name{font-size:28px;font-weight:bold;text-align:center;margin:0;flex:1} 
+        .logo{width:120px;max-width:100%} 
+        .menu{display:flex;justify-content:center;background:#f4f4f4;padding:12px;position:sticky;top:0;width:100%;box-shadow:0 4px 6px rgba(0,0,0,0.1);z-index:1000} 
+        .menu a{text-decoration:none;color:#000;font-weight:bold;padding:8px 16px;transition:.3s} 
+        .menu a:hover{color:green} 
+        section{padding:35px 20px} 
+        h2{margin-bottom:20px} 
+        .button-container{display:flex;justify-content:center;gap:15px;flex-wrap:wrap} 
+        .button{display:flex;align-items:center;justify-content:center;width:260px;height:70px;background:green;color:#fff;font-size:16px;font-weight:bold;border:none;border-radius:6px;cursor:pointer;text-decoration:none;transition:.3s;padding:10px} 
+        .button:hover{background:darkgreen} 
+        .button img{width:35px;height:35px;margin-right:8px} 
+        @media (max-width:768px){.header{flex-direction:column;text-align:center}.logo{margin-top:10px;width:100px}.menu{flex-direction:column;padding:8px}.menu a{padding:10px}.button-container{flex-direction:column;gap:10px}}
     </style>
 </head>
 <body>
@@ -130,20 +41,20 @@
    
     <!-- Navigation Menu -->
     <nav class="menu">
-        <a href="index.html">Home</a>
-        <a href="whatsapp.html">WhatsApp Solutions</a>
-        <a href="engraving.html">Engraving Solutions</a>
-        <a href="https://wa.me/27635800506?text=MAREE">Contact Us</a>
+        <a href="index.html" aria-label="Go to Home Page">Home</a>
+        <a href="whatsapp.html" aria-label="View WhatsApp Solutions">WhatsApp Solutions</a>
+        <a href="engraving.html" aria-label="View Engraving Services">Engraving Solutions</a>
+        <a href="https://wa.me/27635800506?text=MAREE" aria-label="Contact Us via WhatsApp">Contact Us</a>
     </nav>
     
     <!-- Services Section -->
     <section>
         <h2>Our Services</h2>
         <div class="button-container">
-            <a href="whatsapp.html" class="button">
-                <img src="https://mareecloudservices.co.za/whatsapp_logo.png" alt="WhatsApp Logo"> See WhatsApp Solutions
+            <a href="whatsapp.html" class="button" aria-label="Explore WhatsApp Solutions">
+                <img src="https://mareecloudservices.co.za/whatsapp_logo.png" alt="WhatsApp Solutions Logo"> See WhatsApp Solutions
             </a>
-            <a href="engraving.html" class="button">See Engraving Options</a>
+            <a href="engraving.html" class="button" aria-label="Explore Engraving Options">See Engraving Options</a>
         </div>
     </section>
 
