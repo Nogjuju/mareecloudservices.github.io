@@ -28,7 +28,14 @@
         .button{display:flex;align-items:center;justify-content:center;width:260px;height:70px;background:green;color:#fff;font-size:16px;font-weight:bold;border:none;border-radius:6px;cursor:pointer;text-decoration:none;transition:.3s;padding:10px} 
         .button:hover{background:darkgreen} 
         .button img{width:35px;height:35px;margin-right:8px} 
-        @media (max-width:768px){.header{flex-direction:column;text-align:center}.logo{margin-top:10px;width:100px}.menu{flex-direction:column;padding:8px}.menu a{padding:10px}.button-container{flex-direction:column;gap:10px}}
+        .footer{background:#333;color:white;padding:20px;text-align:center;margin-top:40px} 
+        .footer p{margin:5px 0} 
+        .footer a{text-decoration:none;color:#f4f4f4;font-weight:bold} 
+        .footer a:hover{color:#66ff66} 
+        .whatsapp-button{display:flex;align-items:center;justify-content:center;background:#25D366;color:white;font-size:16px;font-weight:bold;border-radius:6px;padding:10px 15px;max-width:260px;margin:10px auto;text-decoration:none;transition:.3s} 
+        .whatsapp-button:hover{background:#1EBE5D} 
+        .whatsapp-button img{width:30px;height:30px;margin-right:10px} 
+        @media (max-width:768px){.header{flex-direction:column;text-align:center}.logo{margin-top:10px;width:100px}.menu{flex-direction:column;padding:8px}.menu a{padding:10px}.button-container{flex-direction:column;gap:10px}.whatsapp-button{width:90%}}
     </style>
 </head>
 <body>
@@ -57,6 +64,24 @@
             <a href="engraving.html" class="button" aria-label="Explore Engraving Options">See Engraving Options</a>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p><strong>Maree Cloud Services</strong></p>
+        <p>71 Arend Avenue, Randpark, 2194, Gauteng, ZA</p>
+        <p>Enterprise No: 2023/238455/07</p>
+        <p>Enterprise Name: MAREE CLOUD SERVICES (Pty) Ltd</p>
+        <p>📧 <a href="mailto:ian@mareecloudservices.co.za" aria-label="Email Maree Cloud Services">ian@mareecloudservices.co.za</a></p>
+        <p>📞 Call Maree Cloud Services on +27 63 580 0506</p>
+        
+        <!-- WhatsApp Call Button -->
+        <a href="https://wa.me/27635800506" class="whatsapp-button" aria-label="Call Maree Cloud Services on WhatsApp">
+            <img src="https://mareecloudservices.co.za/whatsapp_logo.png" alt="WhatsApp Logo"> Call on WhatsApp
+        </a>
+
+        <p><a href="terms.html" aria-label="View Terms and Conditions">Terms & Conditions</a> | <a href="privacy.html" aria-label="View Privacy Policy">Privacy Policy</a></p>
+        <p>© 2025 Maree Cloud Services. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
