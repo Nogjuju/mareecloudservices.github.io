@@ -12,6 +12,10 @@
         .gallery img { width: 200px; margin: 10px; border-radius: 8px; }
         .contact { background: #f4f4f4; padding: 20px; }
         .contact a { display: inline-block; padding: 10px 20px; background: green; color: white; text-decoration: none; border-radius: 5px; }
+        .upload-section { background: #eee; padding: 20px; margin: 20px; border-radius: 8px; }
+        .upload-section input, .upload-section textarea, .upload-section button { margin-top: 10px; }
+        #image-preview { display: none; margin-top: 10px; max-width: 100%; border-radius: 8px; }
+        #confirmation { display: none; color: green; font-weight: bold; margin-top: 10px; }
     </style>
 </head>
 <body>
@@ -36,22 +40,16 @@
         <img src="irish_street_sign2.jpg" alt="Engraving 7">
     </section>
      
-   <section class="upload-section">
-    <h2>Build Your Own Custom Engraving</h2>
-    <p>Upload an image you’d like us to engrave:</p>
-    <form action="https://formspree.io/f/xyzkdpoz" method="POST" enctype="multipart/form-data">
-        <input type="file" name="attachment" accept="image/*" required>
-        <input type="email" name="_replyto" placeholder="Your email (optional)">
-        <textarea name="message" placeholder="Additional details (optional)"></textarea>
-        <button type="submit">Send Design</button>
-    </form>
-    <p><strong>Note:</strong> Supported formats: PNG, JPG</p>
-</section>
-
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>Reach out to us via WhatsApp for inquiries and orders.</p>
-        <a href="https://wa.me/27635800506?text=MAREE">Chat with Us</a>
-    </section>
-</body>
-</html>
+    <section class="upload-section">
+        <h2>Build Your Own Custom Engraving</h2>
+        <p>Upload an image you’d like us to engrave:</p>
+        <form id="upload-form" action="https://formspree.io/f/xyzkdpoz" method="POST" enctype="multipart/form-data">
+            <input type="file" name="attachment" accept="image/*" required id="file-input">
+            <img id="image-preview" alt="Image Preview">
+            <input type="email" name="_replyto" placeholder="Your email (optional)">
+            <textarea name="message" placeholder="Additional details (optional)"></textarea>
+            <button type="submit">Send Design</button>
+        </form>
+        <p id="confirmation">✅ Your design has been submitted successfully!</p>
+        <p><strong>Note:</strong> Supported formats: PNG, JPG</p>
+   
